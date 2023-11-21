@@ -8,11 +8,11 @@ function Navbar() {
   return (
     <header>
       <nav
-        className={`${StyleFont.font} flex justify-between items-center px-[50px] text-lg font-medium`}
+        className={`${StyleFont.font} flex justify-between items-center px-[50px] py-[5px] text-lg font-medium shadow-md`}
       >
-        <div className="flex items-center">
+        <div className="flex items-center text-base gap-8">
           <Link to="/">
-            <img src={Logo} alt="Logo Sehatin" className="w-36" />
+            <img src={Logo} alt="Logo Sehatin" className="w-32" />
           </Link>
           <ul className="flex gap-5">
             <li className="hover:text-blue-theme hover:border-b hover:border-b-blue-theme">
@@ -20,16 +20,16 @@ function Navbar() {
             </li>
             <Dropdown />
             <li className="hover:text-blue-theme hover:border-b hover:border-b-blue-theme">
-              <Link to="/informasi-lanjutan">Informasi Lainnya</Link>
+              <Link to="/informasi-lainnya">Informasi Lainnya</Link>
             </li>
           </ul>
         </div>
-        <div>
+        <div className="text-base">
           <ul className="flex gap-5 items-center">
             <li className="text-blue-theme">
               <Link to="/sign-in">Sign In</Link>
             </li>
-            <li className="bg-blue-theme text-white p-2.5 rounded-xl">
+            <li className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover">
               <Link to="/sign-up">Sign Up</Link>
             </li>
           </ul>

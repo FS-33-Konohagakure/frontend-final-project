@@ -1,12 +1,8 @@
-import React from 'react'
-import Layout from '../components/layout/Layout'
+import React from "react";
+import Layout from "../components/layout/Layout";
 
 function Konsultasi() {
-  return (
-    <Layout>
-        Konsultasi
-    </Layout>
-  )
+  return <Layout>Halaman Konsultasi</Layout>;
 }
 
-export default Konsultasi
+export default Konsultasi;

@@ -12,25 +12,26 @@ import {
 function Footer() {
   return (
     <footer>
-      <div className={`${StyleFont.font} bg-teal-50 mt-12 pt-9`}>
+      <div className={`${StyleFont.font} bg-teal-50 pt-9`}>
         <div className="flex justify-between px-14 py-5 border border-x-0 max-[768px]:flex-col max-[768px]:items-center max-[768px]:py-0">
           <div className="max-[768px]:text-center">
             <div className="max-[768px]:justify-center max-[768px]:flex">
-              <img src={Logo} alt="Logo Sehatin" className="w-36" />
+              <img src={Logo} alt="Logo Sehatin" className="w-32" />
             </div>
             <p className="text-lg">
-              Kesehatan bukanlah segalanya, tapi tanpa <br />
+              Kesehatan bukanlah segalanya,
+              <br /> tapi tanpa <br />
               <b className="text-xl text-blue-theme">KESEHATAN</b>
               <br />
               segalanya menjadi tidak ada gunanya
             </p>
           </div>
-          <div className="flex gap-20 max-[768px]:flex-col max-[768px]:m-5 max-[768px]:gap-5">
+          <div className="flex gap-16 max-[768px]:flex-col max-[768px]:m-5 max-[768px]:gap-5">
             <div className="max-[768px]:text-center">
               <h4 className="font-semibold text-lg mb-2.5 max-[768px]:mb-1">
                 ABOUT
               </h4>
-              <ul className="leading-relaxed max-[768px]:leading-loose">
+              <ul className="leading-8 max-[768px]:leading-loose">
                 <li>KESEHATAN</li>
                 <li>HEALTHY FOOD & DRINK</li>
                 <li>OLAHRAGA</li>
@@ -41,7 +42,7 @@ function Footer() {
               <h4 className="font-semibold text-lg mb-2.5 max-[768px]:mb-1">
                 PRODUK & LAYANAN
               </h4>
-              <ul className="leading-relaxed max-[768px]:leading-loose ">
+              <ul className="leading-8 max-[768px]:leading-loose ">
                 <li>KONSULTASI DOKTER</li>
                 <li>CHALLENGE WORKOUT</li>
                 <li>HEALTH INFORMATION</li>
@@ -49,7 +50,7 @@ function Footer() {
             </div>
             <div className="max-[768px]:text-center">
               <h4 className="font-semibold text-lg mb-2.5">CONTACT</h4>
-              <ul className="leading-relaxed max-[768px]:leading-loose">
+              <ul className="leading-8 max-[768px]:leading-loose">
                 <li>sehatinFS33@skilvul.com</li>
                 <li>+62 222 3344 5566</li>
               </ul>

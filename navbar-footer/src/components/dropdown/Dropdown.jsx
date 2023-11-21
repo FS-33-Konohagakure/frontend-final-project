@@ -10,7 +10,7 @@ function Dropdown() {
       >
         Pola Hidup Sehat
       </Link>
-      <div className="p-2 origin-top-right absolute right-0 mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+      <div className="p-2 origin-top-right absolute mt-2 w-40 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
         <Link
           to="/olahraga"
           className="block px-4 py-2 text-base text-gray-700 hover:bg-blue-theme-transparant hover:border-l-[3px] hover:border-l-blue-theme hover:text-white"

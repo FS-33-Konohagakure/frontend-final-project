@@ -1,9 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import HomePage from './pages/HomePage';
-import Konsultasi from './pages/Konsultasi';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import "./index.css";
+import HomePage from "./pages/HomePage";
+import Konsultasi from "./pages/Konsultasi";
+import Olahraga from "./pages/Olahraga";
+import Makanan from "./pages/Makanan";
+import Minuman from "./pages/Minuman";
+import PolaTidur from "./pages/PolaTidur";
+import InformasiLainnya from "./pages/InformasiLainnya";
 
 const router = createBrowserRouter([
   {
@@ -16,23 +21,23 @@ const router = createBrowserRouter([
   },
   {
     path: "/olahraga",
-    element: <HomePage />,
+    element: <Olahraga />,
   },
   {
     path: "/makanan",
-    element: <HomePage />,
+    element: <Makanan />,
   },
   {
     path: "/minuman",
-    element: <HomePage />,
+    element: <Minuman />,
   },
   {
     path: "/pola-tidur",
-    element: <HomePage />,
+    element: <PolaTidur />,
   },
   {
-    path: "/informasi-lanjutan",
-    element: <HomePage />,
+    path: "/informasi-lainnya",
+    element: <InformasiLainnya />,
   },
   {
     path: "/sign-in",
@@ -44,8 +49,8 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <RouterProvider router={router} />
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
