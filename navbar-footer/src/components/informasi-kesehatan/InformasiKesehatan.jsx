@@ -5,11 +5,12 @@ import LogoOlahraga from "../assets/logo-olahraga.png";
 import LogoMakanan from "../assets/logo-makanan.png";
 import LogoMinuman from "../assets/logo-minuman.png";
 import LogoPolaTidur from "../assets/logo-pola-tidur.png";
+import StyleFont from "./InformasiKesehatan.module.css";
 
 function InformasiKesehatan() {
   return (
     <section>
-      <div className="p-[50px]">
+      <div className={`${StyleFont.font} p-[50px]`}>
         <h1 className="text-2xl font-bold pb-1.5">
           INFORMASI <span className="text-green-theme">KESEHATAN</span>
         </h1>
