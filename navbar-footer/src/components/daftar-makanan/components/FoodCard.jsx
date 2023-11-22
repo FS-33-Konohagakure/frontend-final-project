@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const FoodCard = ({ name, imgSrc, id }) => {
   return (
-    <div className="bg-white p-5 rounded-3xl">
+    <div className="bg-white p-5 rounded-3xl shadow-xl">
       <img
         src={imgSrc}
         alt={"Image " + name}
@@ -11,10 +11,10 @@ const FoodCard = ({ name, imgSrc, id }) => {
       />
       <p className="text-center p-2.5 text-lg font-semibold">{name}</p>
       <div className="text-right py-1.5">
-        <Link to="">
-          <p className="py-1.5 px-2.5 text-[10px] border border-green-theme inline rounded-xl">
-            View Detail
-          </p>
+        <Link to=""
+          className="py-1.5 px-2.5 text-[10px] border border-green-theme inline rounded-xl"
+        >
+          View Detail
         </Link>
       </div>
     </div>
@@ -24,7 +24,7 @@ const FoodCard = ({ name, imgSrc, id }) => {
 FoodCard.propTypes = {
   name: PropTypes.string.isRequired,
   imgSrc: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
 };
 
 export default FoodCard;

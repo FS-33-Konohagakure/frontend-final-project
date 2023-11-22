@@ -133,11 +133,7 @@ function DaftarMakanan() {
     },
   ];
 
-  const [category, setCategory] = useState({
-    category1: "Buah",
-    category2: "Sayuran",
-    category3: "Daging",
-  });
+  const [category, setCategory] = useState("Buah");
 
   const activeButtonStyling =
     "bg-green-bg-active-dm py-2.5 px-5 rounded-[32px]";
@@ -149,26 +145,38 @@ function DaftarMakanan() {
   return (
     <section className="px-[50px]">
       <div
-        className={`${Style.font} bg-green-background py-[30px] rounded-[36px]`}
+        className={`${Style.font} bg-green-background py-[30px] rounded-[36px] shadow-xl`}
       >
         <h1 className="text-center text-3xl font-bold">
           Daftar <span className="text-green-theme">Makanan</span>
         </h1>
         <ul className="flex justify-center items-center text-lg font-semibold gap-[80px] py-[20px]">
           <li
-            className={category === "Buah" ? activeButtonStyling : "text-gray-non-active hover:bg-gray-bg-non-active hover:py-2.5 hover:px-5 hover:rounded-[32px]"}
+            className={
+              category === "Buah"
+                ? activeButtonStyling
+                : "text-gray-non-active hover:bg-gray-bg-non-active hover:py-2.5 hover:px-5 hover:rounded-[32px]"
+            }
             onClick={() => setCategory("Buah")}
           >
             Buah
           </li>
           <li
-            className={category === "Sayuran" ? activeButtonStyling : "text-gray-non-active hover:bg-gray-bg-non-active hover:py-2.5 hover:px-5 hover:rounded-[32px]"}
+            className={
+              category === "Sayuran"
+                ? activeButtonStyling
+                : "text-gray-non-active hover:bg-gray-bg-non-active hover:py-2.5 hover:px-5 hover:rounded-[32px]"
+            }
             onClick={() => setCategory("Sayuran")}
           >
             Sayuran
           </li>
           <li
-            className={category === "Daging" ? activeButtonStyling : "text-gray-non-active hover:bg-gray-bg-non-active hover:py-2.5 hover:px-5 hover:rounded-[32px]"}
+            className={
+              category === "Daging"
+                ? activeButtonStyling
+                : "text-gray-non-active hover:bg-gray-bg-non-active hover:py-2.5 hover:px-5 hover:rounded-[32px]"
+            }
             onClick={() => setCategory("Daging")}
           >
             Daging
@@ -179,7 +187,7 @@ function DaftarMakanan() {
             <FoodCard
               name={makanan.name}
               imgSrc={makanan.imgSrc}
-              key={makanan.id}
+              key={makanan.name}
               id={makanan.id}
             />
           ))}
