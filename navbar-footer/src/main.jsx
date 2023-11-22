@@ -47,6 +47,10 @@ const router = createBrowserRouter([
     path: "/sign-up",
     element: <HomePage />,
   },
+  {
+    path: "/makanan/:kategori",
+    element: <Makanan />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
