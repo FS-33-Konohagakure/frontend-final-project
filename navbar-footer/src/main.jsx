@@ -10,6 +10,8 @@ import Minuman from "./pages/Minuman";
 import PolaTidur from "./pages/PolaTidur";
 import InformasiLainnya from "./pages/InformasiLainnya";
 import DetailMinuman from "./pages/DetailMinuman";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
 
 const router = createBrowserRouter([
   {
@@ -42,11 +44,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/sign-in",
-    element: <HomePage />,
+    element: <LoginPage />,
   },
   {
     path: "/sign-up",
-    element: <HomePage />,
+    element: <RegisterPage />,
   },
   {
     path: "/makanan/:kategori",
