@@ -55,7 +55,7 @@ const router = createBrowserRouter([
     element: <Makanan />,
   },
   {
-    path: "/minuman/:id",
+    path: "/minuman/:minumanId",
     element: <DetailMinuman />,
   },
 ]);

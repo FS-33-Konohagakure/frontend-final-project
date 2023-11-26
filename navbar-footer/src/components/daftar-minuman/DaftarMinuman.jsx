@@ -1,4 +1,3 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Style from "./DaftarMinuman.module.css";
@@ -8,11 +7,12 @@ const DaftarMinuman = () => {
 
   const DATA_MINUMAN =
     "https://655d966c9f1e1093c59987e6.mockapi.io/daftar-minuman";
+
   useEffect(() => {
-    axios
-      .get(DATA_MINUMAN)
-      .then((response) => setData(response.data))
-      .catch((error) => console.error("Error fetching data", error));
+    fetch(DATA_MINUMAN)
+      .then((response) => response.json())
+      .then((data) => setData(data))
+      .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
   return (
