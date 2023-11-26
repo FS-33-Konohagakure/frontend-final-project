@@ -9,6 +9,7 @@ import Makanan from "./pages/Makanan";
 import Minuman from "./pages/Minuman";
 import PolaTidur from "./pages/PolaTidur";
 import InformasiLainnya from "./pages/InformasiLainnya";
+import DetailMinuman from "./pages/DetailMinuman";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/makanan/:kategori",
     element: <Makanan />,
+  },
+  {
+    path: "/minuman/:id",
+    element: <DetailMinuman />,
   },
 ]);
 

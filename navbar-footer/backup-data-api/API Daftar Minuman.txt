@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Jamu",
+    "image": "https://i.ibb.co/K7LVz6C/jamu.png",
+    "detail": "Jamu merupakan minuman biasa dijadikan obat yang terbuat dari bahan-bahan alami seperti dari tumbuh-tumbuhan yang diracik menjadi serbuk jamu dan minuman jamu. Tujuannya sebagai khasiat kesehatan dan kehangatan tubuh.",
+    "ragam": [
+      {
+        "name": "Jamu Beras Kencur",
+        "detail": "Khasiat jamu beras kencur adalah mengontrol berat badan, menambah nafsu makan, menghilangkan pegal linu, meningkatkan stamina, anti diabetes, dan pengontrol berat badan."
+      },
+      {
+        "name": "Jamu Temulawak",
+        "detail": "Khasiat jamu temulawak adalah menyembuhkan keluhan pusing, mual, sakit perut, masuk angin, kemudian obat hepatitis, dan menambah nafsu makan."
+      },
+      {
+        "name": "Jamu Kunyit Asam",
+        "detail": "Khasiat jamu kunyit asam adalah melancarkan dan meredakan nyeri haid, meremajakan sel, dan anti nyeri."
+      },
+      {
+        "name": "Jamu Pahitan",
+        "detail": "Khasiat jamu pahitan adalah mengatasi pegal-pegal, menyembuhkan penyakit gatal, menambah nafsu makan, mencegah resiko diabetes, terapi cuci darah, dan anti alergi."
+      },
+      {
+        "name": "Jamu Asam Jawa",
+        "detail": "Khasiat jamu asam jawa adalah menjaga kesehatan pencernaan, menjaga kesehatan jantung, mengontrol gula darah, membantu menurunkan berat badan dan membantu melindungi organ hati."
+      }
+    ],
+    "id": "1"
+  },
+  {
+    "name": "Wedang",
+    "image": "https://i.ibb.co/Kh97CGH/wedang.png",
+    "detail": "Wedang merupakan racikan minuman herbal yang menghangatkan badan. Orang jawa biasa menyebut minuman penghangat ini sebagai wedang.",
+    "ragam": [
+      {
+        "name": "Wedang Jahe",
+        "detail": "Wedang jahe adalah minuman dengan bahan dasar jahe  memiliki banyak manfaat terutama mengandung antibiotik alami yang mampu mengobati masalah perut seperti mual."
+      },
+      {
+        "name": "Wedang Uwuh",
+        "detail": "Wedang uwuh dalam artian jawa berarti sampah karena di dalam penyajian wedang ini terdapat berbagai rempah seperti kayu secang dan dedaunan herbal. Khasiatnya dapat menghilangkan capek dan nyeri, menyegarkan badan, meningkatkan kekebalan tubuh, melancarkan sirkulasi darah, menyembuhkan dan mencegah masuk angin"
+      },
+      {
+        "name": "Wedang Bajigur",
+        "detail": "Wedang bajigur adalah minuman penghangat badan yang terdiri dari santan, gula merah, jahe merah, batang kulit kayu manis, daun pandan, dan sedikit bubuk kopi. Dapat menurunkan hipertensi, mengobati rematik, mengatasi masalah pencernaan, memperkuat tulang, menjaga kadar kolesterol, mencegah kanker, dan mencegah obesitas."
+      },
+      {
+        "name": "Wedang Ronde",
+        "detail": "Wedang ronde adalah minuman hangat dengan kuah jahe dan serai yang pedas dan manis dan disajikan bersama ronde, kacang sangrai, dan kolang kaling. Berkhasiat menghilangkan kembung, mencegah risiko serangan jantung, menyembuhkan sakit tenggorokan dan meredakan sakit kepala."
+      }
+    ],
+    "id": "2"
+  },
+  {
+    "name": "Infused Water",
+    "image": "https://i.ibb.co/8XYRp3G/infused-water.png",
+    "detail": "Infused Water dikenal sebagai minuman yang berkhasiat sebagai detoksifikasi. Minuman ini juga baik dikonsumsi untuk mencukupi kebutuhan cairan dan elektrolit tubuh, serta mencegah dehidrasi.",
+    "manfaat": [
+      {
+        "name": "Mendukung proses detoksifikasi",
+        "detail": "Infused water yang terbuat dari campuran buah-buahan, sayur, atau rempah-rempah dikenal bermanfaat sebagai air detoks. Minuman ini diyakini bisa membantu proses pembuangan racun penyebab penyakit dari dalam tubuh. Anda disarankan untuk mengonsumsi infused water guna membuang racun berbahaya sekaligus menyeimbangkan kadar pH tubuh. "
+      },
+      {
+        "name": "Menurunkan Berat Badan",
+        "detail": "Meminum infused water juga dapat mengurangi keinginan untuk mengonsumsi makanan manis dan minuman bersoda. Hal ini dapat membantu mengurangi asupan kalori harian dan bermanfaat untuk menurunkan berat badan. Selain itu, infused water juga dapat meningkatkan metabolisme tubuh, sehingga lebih banyak kalori yang terbakar. "
+      },
+      {
+        "name": "Meningkatkan Kesehatan Pencernaan",
+        "detail": "Manfaat infused water lainnya adalah mengatasi dehidrasi, meningkatkan kesehatan saluran pencernaan, dan menjaga pergerakan usus tetap teratur. Dengan memenuhi kebutuhan tubuh akan air, makanan akan lebih cepat diproses dan diserap nutrisinya oleh tubuh."
+      },
+      {
+        "name": "Mencegah Penuaan Dini",
+        "detail": "Air putih yang dicampur dengan buah-buahan, seperti delima, jeruk, lemon, kiwi, dan stroberi, juga kaya akan antioksidan. Kandungan antioksidan pada buah-buahan tersebut berkhasiat untuk menangkal efek radikal bebas yang dapat membuat kulit menjadi lebih cepat berkeriput dan menua."
+      },
+      {
+        "name": "Meningkatkan Kekebalan Tubuh",
+        "detail": "Berbagai campuran buah dan sayuran dalam infused water dapat memberikan nutrisi yang baik dan membantu menjaga sistem kekebalan tubuh. Selain itu, mengonsumsi rutin infused water dengan kandungan vitamin C terbukti bermanfaat untuk melindungi tubuh dari radikal bebas penyebab penyakit jantung, radang sendi, dan kanker."
+      }
+    ],
+    "id": "3"
+  },
+  {
+    "name": "Jus Buah dan Sayur",
+    "image": "https://i.ibb.co/4R9T3Qy/jus-buah-sayur.png",
+    "detail": "Jus Buah dan Sayur merupakan cara lain untuk menikmati buah dan sayuran. Mengonsumsinya secara rutin akan memberikan efek baik bagi kesehatan tubuh. Hal itu karena sayuran dan buah mengandung berbagai vitamin dan nutrisi yang baik bagi metabolisme tubuh.",
+    "id": "4"
+  },
+  {
+    "name": "Susu",
+    "image": "https://i.ibb.co/7jWkFvH/susu.png",
+    "detail": "Susu merupakan salah satu minuman yang umum dikonsumsi oleh setiap orang di segala usia. Susu mengandung beragam nutrisi penting yang mampu menjaga organ tubuh tetap berfungsi dengan baik dan melindungi tubuh dari serangan penyakit.",
+    "manfaat": [
+      {
+        "name": "Menunjang tumbuh kembang anak",
+        "detail": "Anak usia 6 sampai 10 tahun perlu mendapatkan asupan protein sebanyak 35 sampai 40 gram setiap harinya, sedangkan remaja membutuhkan protein sebanyak 50 sampai 70 gram per hari. Pasalnya, protein merupakan makronutrisi yang dibutuhkan anak untuk menunjang tumbuh kembang."
+      },
+      {
+        "name": "Menjaga Kesehatan Tulang",
+        "detail": "Kalsium merupakan mineral utama yang terkandung di dalam tulang. Tubuh membutuhkan kalsium untuk meningkatkan dan menjaga kekuatan tulang, serta membuat otot dan pembuluh darah berfungsi dengan baik. Kebutuhan kalsium tersebut dapat dipenuhi dengan mengonsumsi makanan atau minuman tertentu, seperti susu, keju, yoghurt, ikan, dan kacang kedelai."
+      },
+      {
+        "name": "Meningkatkan Sistem Kekebalan Tubuh",
+        "detail": "Manfaat vitamin B12 dalam susu berperan terhadap fungsi sistem kekebalan tubuh dengan mencegah zat berbahaya atau kuman penyebab penyakit masuk ke dalam tubuh. Vitamin ini pun turut membantu produksi sel darah putih yang berperan menangkap dan menghancurkan zat serta kuman berbahaya di dalam tubuh."
+      },
+      {
+        "name": "Meningkatkan Kekuatan Otot dan Fungsi Otak",
+        "detail": "Kandungan zat besi dalam susu berperan besar terhadap kesehatan dan fungsi otak. Pasalnya, zat besi diperlukan untuk pembentukan hemoglobin yang yang berfungsi untuk membawa oksigen ke seluruh tubuh, termasuk otak. Dengan tercukupinya kebutuhan oksigen tersebut, fungsi otak anak seperti kemampuan belajar dan daya fokusnya akan terdukung."
+      },
+      {
+        "name": "Menjaga Kesehatan Mata",
+        "detail": "Susu terkenal akan kandungan vitamin A yang melimpah, nutrisi yang amat penting untuk indra penglihatan. Mencukupi asupan vitamin A setiap harinya dapat meningkatkan kualitas penglihatan dan menurunkan risiko sejumlah penyakit mata, seperti degenerasi makula."
+      }
+    ],
+    "id": "5"
+  },
+  {
+    "name": "Teh",
+    "image": "https://i.ibb.co/x6Z3prw/teh.png",
+    "detail": "Minuman teh dibuat dengan cara menyeduh daun, pucuk daun, atau tangkai daun yang di keringkan. Manfaatnya sebagai anti kanker, antioksidan, antimikroba, antibakteria, mencegah aterosklerosis, menjaga kesehatan jantung, menstimulasi sistem imun, mencegah Parkinson, menurunkan kolesterol, mencegah karies gigi, mencegah bau mulut, melancarkan urine, menghindari stroke dan menurunkan tekanan darah",
+    "ragam": [
+      {
+        "name": "Teh Hijau (Green Tea)",
+        "detail": "Teh hijau diperoleh tanpa proses fermentasi, biasa digunakan untuk membantu proses pencernaan dan kemampuannya dalam membunuh bakteri. Kandungan polifenol yang tinggi dalam teh hijau dimanfaatkan untuk membunuh bakteri-bakteri perusak dan juga bakteri yang menyebabkan penyakit di rongga mulut. Konsumsi teh hijau juga dipercayai memiliki efek untuk menurunkan penyakit pneumonia."
+      },
+      {
+        "name": "Teh Hitam (Black Tea)",
+        "detail": "Teh hitam biasa disebut juga sebagai teh merah diperoleh melalui proses fermentasi sehingga dapat memberi warna dan rasa pada teh hitam."
+      },
+      {
+        "name": "Teh Oolong (Oolong Tea)",
+        "detail": "Teh oolong diproses secara semi fermentasi dan dibuat dengan bahan baku khusus, yaitu varietas tertentu seperti Camellia sinensis varietas Sinensis yang memberikan aroma khusus. Teh oolong dihasilkan melalui proses pemanasan yang dilakukan segera setelah proses penggulungan daun, dengan tujuan untuk menghentikan proses fermentasi, oleh karena itu teh oolong disebut sebagai teh semi fermentasi."
+      },
+      {
+        "name": "Teh Putih (White Tea)",
+        "detail": "Teh putih merupakan jenis teh yang tidak mengalami proses fermentasi sama sekali, dimana proses pengeringan dan penguapan dilakukan dengan sangat singkat. Teh Putih diambil hanya dari daun teh pilihan yang dipetik dan dipanen sebelum benar-benar mekar. Daun teh yang dipetik adalah pucuk daun yang muda, kemudian dikeringkan dengan metode penguapan atau dibiarkan kering oleh udara. Dengan proses yang lebih singkat tersebut, kandungan zat katekin pada teh putih adalah yang tertinggi dibandingkan dengan teh yang lain."
+      }
+    ],
+    "id": "6"
+  }
+]

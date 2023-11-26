@@ -6,9 +6,11 @@ import Style from "./DaftarMinuman.module.css";
 const DaftarMinuman = () => {
   const [data, setData] = useState([]);
 
+  const DATA_MINUMAN =
+    "https://655d966c9f1e1093c59987e6.mockapi.io/daftar-minuman";
   useEffect(() => {
     axios
-      .get("https://655d966c9f1e1093c59987e6.mockapi.io/daftar-minuman")
+      .get(DATA_MINUMAN)
       .then((response) => setData(response.data))
       .catch((error) => console.error("Error fetching data", error));
   }, []);
@@ -37,7 +39,7 @@ const DaftarMinuman = () => {
                 </p>
                 <div className="text-right py-1.5">
                   <Link
-                    to=""
+                    to={`/minuman/${item.id}`}
                     className="py-1.5 px-2.5 text-[10px] border border-green-theme inline rounded-xl"
                   >
                     View Detail
