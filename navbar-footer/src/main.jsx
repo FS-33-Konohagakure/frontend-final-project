@@ -12,6 +12,8 @@ import InformasiLainnya from "./pages/InformasiLainnya";
 import DetailMinuman from "./pages/DetailMinuman";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import MakananPage from "./pages/MakananPage";
+import DaftarMakananPage from "./pages/DaftarMakananPage";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +29,8 @@ const router = createBrowserRouter([
     element: <Olahraga />,
   },
   {
-    path: "/makanan",
-    element: <Makanan />,
+    path: "/makanan-page",
+    element: <MakananPage />,
   },
   {
     path: "/minuman",
@@ -57,6 +59,10 @@ const router = createBrowserRouter([
   {
     path: "/minuman/:minumanId",
     element: <DetailMinuman />,
+  },
+  {
+    path: "/makanan-page/:kategoriId/daftar-makanan",
+    element: <DaftarMakananPage />,
   },
 ]);
 

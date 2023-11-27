@@ -1,27 +1,20 @@
 import React, { useState } from "react";
 import "./Modal.css"
+import Modal from 'react-modal';
 
-const Modal = ({ isOpen, onclose }) => {
-  const handleClose = () => {
-    onclose();
-  };
-
+const CustomModal = ({ isOpen, closeModal, data }) => {
 
 return (
-  <div className={`modal ${isOpen ? "block" : "hidden"}`}>
-    <div className="modal-overlay" onClick={handleClose}></div>
-    <div className="modal-container">
-      <div className="modal-content">
-        <button className="modal-close" onClick={handleClose}>
-          X
-        </button>
-        <div className="modal-body">
-          <p>This is the modal content.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-);
+  <Modal
+      isOpen={isOpen}
+      onRequestClose={closeModal}
+      contentLabel="Example Modal"
+    >
+      <h2>{data.title}</h2>
+      <p>{data.description}</p>
+      <button onClick={closeModal}>Close Modal</button>
+    </Modal>
+  );
 };
 
-export default Modal;
+export default CustomModal;

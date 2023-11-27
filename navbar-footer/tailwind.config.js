@@ -14,6 +14,7 @@ export default {
         "green-bg-lr": "rgb(114, 189, 136)",
         "green-minuman": "#2B9249",
         "green-bg-card-minuman": "#F8FFFA",
+        "green-bg-card-makanan": "#F0FFF5",
         "gray-non-active": "#6C6C6C",
         "gray-bg-non-active": "#D8F6E1",
       },

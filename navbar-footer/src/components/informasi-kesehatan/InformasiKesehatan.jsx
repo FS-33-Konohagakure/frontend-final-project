@@ -31,7 +31,7 @@ function InformasiKesehatan() {
               <p>Olahraga</p>
             </div>
           </Link>
-          <Link to="/makanan">
+          <Link to="/makanan-page">
             <div>
               <img src={LogoMakanan} alt="Logo Makanan" className="w-52" />
               <p>Makanan</p>

@@ -21,7 +21,7 @@ function Dropdown() {
           Olahraga
         </Link>
         <Link
-          to="/makanan"
+          to="/makanan-page"
           className="block px-4 py-2 text-base text-gray-700 hover:bg-blue-theme-transparant hover:border-l-[3px] hover:border-l-blue-theme hover:text-white"
         >
           Makanan
