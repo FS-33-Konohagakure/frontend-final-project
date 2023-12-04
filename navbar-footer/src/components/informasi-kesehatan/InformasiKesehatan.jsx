@@ -11,10 +11,10 @@ function InformasiKesehatan() {
   return (
     <section>
       <div className={`${StyleFont.font} p-[50px]`}>
-        <h1 className="text-2xl font-bold pb-1.5">
+        <h1 className="text-2xl font-bold pb-1.5 max-[590px]:text-center">
           INFORMASI <span className="text-green-theme">KESEHATAN</span>
         </h1>
-        <div className="flex justify-between border-t-[2px] p-[20px] text-center text-lg font-semibold">
+        <div className="flex flex-wrap justify-around border-t-[2px] p-[20px] text-center text-lg font-semibold max-[1000px]:gap-5">
           <Link to="/konsultasi">
             <div>
               <img

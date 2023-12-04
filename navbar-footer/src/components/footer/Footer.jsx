@@ -26,7 +26,7 @@ function Footer() {
               segalanya menjadi tidak ada gunanya
             </p>
           </div>
-          <div className="flex gap-16 max-[768px]:flex-col max-[768px]:m-5 max-[768px]:gap-5">
+          <div className="flex gap-16 max-[900px]:gap-5 max-[768px]:flex-col max-[768px]:m-5 max-[768px]:gap-5">
             <div className="max-[768px]:text-center">
               <h4 className="font-semibold text-lg mb-2.5 max-[768px]:mb-1">
                 ABOUT

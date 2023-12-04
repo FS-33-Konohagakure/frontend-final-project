@@ -181,11 +181,11 @@ function Makanan() {
   return (
     <Layout>
       <section className={`${Style.font} p-[50px] pb-0`}>
-        <div className="flex gap-[30px] p-[30px] rounded-2xl bg-green-background drop-shadow-xl">
+        <div className="flex gap-[30px] p-[30px] rounded-2xl bg-green-background drop-shadow-xl max-lg:flex-col max-lg:items-center">
           <img
             src={selectedFood.imgSrc}
             alt={selectedFood.name}
-            className="w-[500px] rounded-2xl"
+            className="w-[500px] rounded-2xl max-lg:auto"
           />
           <div>
             <h1 className="text-center text-4xl font-semibold">

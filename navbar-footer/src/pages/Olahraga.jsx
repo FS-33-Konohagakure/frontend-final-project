@@ -33,7 +33,7 @@ const Olahraga = () => {
             >
               <button
                 onClick={() => switchComponent("A")}
-                className="text-4xl font-bold text-white"
+                className="text-4xl font-bold text-white max-[768px]:text-3xl"
               >
                 Challange
               </button>
@@ -47,7 +47,7 @@ const Olahraga = () => {
             >
               <button
                 onClick={() => switchComponent("B")}
-                className="text-4xl font-bold text-white"
+                className="text-4xl font-bold text-white max-[768px]:text-3xl"
               >
                 Kalender
               </button>

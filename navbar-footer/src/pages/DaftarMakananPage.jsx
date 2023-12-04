@@ -21,13 +21,13 @@ function DaftarMakananPage() {
         <div className={`${Style.font} text-center pt-[50px]`}>Loading...</div>
       ) : (
         <section className={`${Style.font} p-[50px] pb-0`}>
-          <div className="flex gap-[30px] justify-center">
+          <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center">
             <img
               src={data[0].image}
               alt={data[0].name}
               className="w-[400px] rounded-[50px]"
             />
-            <div className="w-[500px] p-[30px] bg-green-bg-card-makanan rounded-[50px] drop-shadow-xl">
+            <div className="w-[500px] p-[30px] bg-green-bg-card-makanan rounded-[50px] drop-shadow-xl max-sm:w-auto">
               <h1 className="pb-2.5 text-5xl font-semibold text-center text-green-theme border-b-2 border-b-green-theme">
                 {data[0].name}
               </h1>

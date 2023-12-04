@@ -24,7 +24,7 @@ const MakananPage = () => {
           ) : (
             data.map((item) => (
               <Link to={`/makanan-page/${item.id}/daftar-makanan`}>
-                <div className="w-[350px]">
+                <div className="w-[350px] max-sm:w-auto">
                   <img src={item.image} alt={item.name} />
                   <h1 className="pt-5 pb-2.5 text-lg text-center font-semibold border-b-2 border-b-green-minuman">
                     {item.name}

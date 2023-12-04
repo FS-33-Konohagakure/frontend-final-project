@@ -14,7 +14,7 @@ const OlahragaDua = () => {
   }, []);
 
   return (
-    <div className="py-[50px] text-4xl text-center leading-relaxe bg-green-bg-card-makanan rounded-2xl shadow-xl">
+    <div className="py-[50px] text-4xl text-center leading-relaxe bg-green-bg-card-makanan rounded-2xl shadow-xl max-[800px]:text-3xl max-[600px]:text-xl">
       <p className="font-semibold">{moment(date).format("LLLL")}</p>
       <Calendar
         onChange={(newDate) => setDate(newDate)}

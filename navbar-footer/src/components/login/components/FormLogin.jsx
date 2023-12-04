@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FormLogin = () => {
   return (
-    <form className={`${Style.font}`}>
+    <form className={`${Style.font} max-h-screen`}>
       <div>
         <label htmlFor="email" className="text-white text-lg font-semibold">
           <FontAwesomeIcon icon={faEnvelope} /> Email

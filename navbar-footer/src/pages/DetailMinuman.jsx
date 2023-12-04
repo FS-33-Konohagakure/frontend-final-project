@@ -24,76 +24,76 @@ function DetailMinuman() {
           <h1 className="pb-1.5 text-4xl font-semibold border-b-2">
             {data.name}
           </h1>
-          <div className="mt-[30px] p-[20px] flex gap-[30px] border rounded-xl text-justify shadow-xl">
+          <div className="mt-[30px] p-[20px] flex gap-[30px] border rounded-xl text-justify shadow-xl max-lg:flex-col">
             <img
               src={data.image}
               alt={data.name}
-              className="w-[1000px] rounded-xl"
+              className="w-auto rounded-xl"
             />
-            <p className="text-2xl">{data.detail}</p>
+            <p className="text-2xl max-sm:text-xl">{data.detail}</p>
           </div>
           {data.ragam ? (
             <div>
               <h1 className="text-center pt-[50px] text-2xl font-medium">
                 {data.ragam} :
               </h1>
-              <div className="pt-[20px] px-[180px] gap-[30px] flex flex-wrap justify-center items-center">
-                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl">
+              <div className="pt-[20px] px-[180px] gap-[30px] flex flex-wrap justify-center items-center max-md:px-[100px] max-sm:px-[50px]">
+                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl max-lg:flex-col max-lg:items-center">
                   <img
                     src={data.daftarRagam[0].imageRagam}
                     alt={data.daftarRagam[0].name}
-                    className="w-[200px] rounded-xl"
+                    className="w-[200px] rounded-xl max-lg:w-auto"
                   />
                   <div>
                     <h1 className="text-center text-2xl font-medium text-green-minuman">
                       {data.daftarRagam[0].name}
                     </h1>
-                    <p className="pt-2.5 text-lg">
+                    <p className="pt-2.5 text-lg text-justify">
                       {data.daftarRagam[0].detail}
                     </p>
                   </div>
                 </div>
-                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl">
+                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl max-lg:flex-col max-lg:items-center">
                   <img
                     src={data.daftarRagam[1].imageRagam}
                     alt={data.daftarRagam[1].name}
-                    className="w-[200px] rounded-xl"
+                    className="w-[200px] rounded-xl max-lg:w-auto"
                   />
                   <div>
                     <h1 className="text-center text-2xl font-medium text-green-minuman">
                       {data.daftarRagam[1].name}
                     </h1>
-                    <p className="pt-2.5 text-lg">
+                    <p className="pt-2.5 text-lg text-justify">
                       {data.daftarRagam[1].detail}
                     </p>
                   </div>
                 </div>
-                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl">
+                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl max-lg:flex-col max-lg:items-center">
                   <img
                     src={data.daftarRagam[2].imageRagam}
                     alt={data.daftarRagam[2].name}
-                    className="w-[200px] rounded-xl"
+                    className="w-[200px] rounded-xl max-lg:w-auto"
                   />
                   <div>
                     <h1 className="text-center text-2xl font-medium text-green-minuman">
                       {data.daftarRagam[2].name}
                     </h1>
-                    <p className="pt-2.5 text-lg">
+                    <p className="pt-2.5 text-lg text-justify">
                       {data.daftarRagam[2].detail}
                     </p>
                   </div>
                 </div>
-                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl">
+                <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl max-lg:flex-col max-lg:items-center">
                   <img
                     src={data.daftarRagam[3].imageRagam}
                     alt={data.daftarRagam[3].name}
-                    className="w-[200px] rounded-xl"
+                    className="w-[200px] rounded-xl max-lg:w-auto"
                   />
                   <div>
                     <h1 className="text-center text-2xl font-medium text-green-minuman">
                       {data.daftarRagam[3].name}
                     </h1>
-                    <p className="pt-2.5 text-lg">
+                    <p className="pt-2.5 text-lg text-justify">
                       {data.daftarRagam[3].detail}
                     </p>
                   </div>
@@ -126,7 +126,7 @@ function DetailMinuman() {
                   <h1 className="text-center pt-[50px] text-2xl font-medium">
                     {data.manfaat} :
                   </h1>
-                  <div className="pt-[20px] px-[180px] gap-[30px] flex flex-wrap justify-center items-center">
+                  <div className="pt-[20px] px-[180px] gap-[30px] flex flex-wrap justify-center items-center max-md:px-[100px] max-sm:px-[50px]">
                     <div className="flex p-[20px] gap-[20px] bg-green-bg-card-minuman rounded-2xl shadow-xl">
                       <div>
                         <h1 className="text-center text-2xl font-medium text-green-minuman">

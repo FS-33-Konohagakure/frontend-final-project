@@ -5,7 +5,7 @@ function OlahragaSatu() {
     <div className="flex flex-wrap justify-center gap-[30px]">
       <div>
         <iframe
-          className="w-[600px] h-[300px] shadow-lg"
+          className="w-[600px] h-[300px] shadow-lg max-[700px]:w-[400px] max-[700px]:h-[200px] max-[500px]:w-[385px]"
           src="https://www.youtube.com/embed/YaXPRqUwItQ?si=-78L5Ux0q40HLU86"
           title="YouTube video player"
           frameborder="0"
@@ -28,7 +28,7 @@ function OlahragaSatu() {
       </div>
       <div>
         <iframe
-          className="w-[600px] h-[300px] shadow-lg"
+          className="w-[600px] h-[300px] shadow-lg max-[700px]:w-[400px] max-[700px]:h-[200px] max-[500px]:w-[385px]"
           src="https://www.youtube.com/embed/871uim_3l1A?si=j-r7glgbRtWlAvEA"
           title="YouTube video player"
           frameborder="0"
@@ -47,7 +47,7 @@ function OlahragaSatu() {
       </div>
       <div>
         <iframe
-          className="w-[600px] h-[300px] shadow-lg"
+          className="w-[600px] h-[300px] shadow-lg max-[700px]:w-[400px] max-[700px]:h-[200px] max-[500px]:w-[385px]"
           src="https://www.youtube.com/embed/pvIjsG5Svck?si=L-eHdwXD3_a9k7OJ"
           title="YouTube video player"
           frameborder="0"
@@ -70,7 +70,7 @@ function OlahragaSatu() {
       </div>
       <div>
         <iframe
-          className="w-[600px] h-[300px] shadow-lg"
+          className="w-[600px] h-[300px] shadow-lg max-[700px]:w-[400px] max-[700px]:h-[200px] max-[500px]:w-[385px]"
           src="https://www.youtube.com/embed/QRZcZgSgSHI?si=9978EcdSbAivoCoT"
           title="YouTube video player"
           frameborder="0"

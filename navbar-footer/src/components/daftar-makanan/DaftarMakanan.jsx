@@ -192,7 +192,7 @@ function DaftarMakanan() {
         <h1 className="text-center text-3xl font-bold">
           Daftar <span className="text-green-theme">Makanan</span>
         </h1>
-        <ul className="flex justify-center items-center text-lg font-semibold gap-[80px] py-[20px]">
+        <ul className="flex flex-wrap justify-center items-center text-lg font-semibold gap-[80px] py-[20px]">
           <li
             className={
               category === "Buah"
