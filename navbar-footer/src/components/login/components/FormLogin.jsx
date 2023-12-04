@@ -4,7 +4,7 @@ import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faLock } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function FormLogin() {
+const FormLogin = () => {
   return (
     <form className={`${Style.font}`}>
       <div>
@@ -38,6 +38,6 @@ function FormLogin() {
       </div>
     </form>
   );
-}
+};
 
 export default FormLogin;

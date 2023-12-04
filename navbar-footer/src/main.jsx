@@ -14,6 +14,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import MakananPage from "./pages/MakananPage";
 import DaftarMakananPage from "./pages/DaftarMakananPage";
+import DaftarDokter from "./pages/konsultasi/DaftarDokter";
 
 const router = createBrowserRouter([
   {
@@ -53,7 +54,7 @@ const router = createBrowserRouter([
     element: <RegisterPage />,
   },
   {
-    path: "/makanan/:kategori",
+    path: "/makanan/:makananName",
     element: <Makanan />,
   },
   {
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
   {
     path: "/makanan-page/:kategoriId/daftar-makanan",
     element: <DaftarMakananPage />,
+  },
+  {
+    path: "/konsultasi/:kategoriId/dokter",
+    element: <DaftarDokter />,
   },
 ]);
 

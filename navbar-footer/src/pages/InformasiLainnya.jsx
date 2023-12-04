@@ -7,7 +7,9 @@ function InformasiLainnya() {
     <Layout>
       <section className={`${Style.font} px-[50px] pt-[50px]`}>
         <div className="leading-7">
-          <h1 className="text-xl font-semibold">Keunggulan <span className="text-blue-theme">SEHATIN.ID</span></h1>
+          <h1 className="text-xl font-semibold">
+            Keunggulan <span className="text-blue-theme">SEHATIN.ID</span>
+          </h1>
           <p>
             Satu aplikasi untuk melakukan konsultasi bersama dokter spesialis
             secara online.
@@ -23,7 +25,10 @@ function InformasiLainnya() {
         </div>
         <br />
         <div className="leading-7">
-          <h1 className="text-xl font-semibold">Tanya Dokter <span className="text-blue-theme">Umum dan Spesialis</span></h1>
+          <h1 className="text-xl font-semibold">
+            Tanya Dokter{" "}
+            <span className="text-blue-theme">Umum dan Spesialis</span>
+          </h1>
           <p>
             Kini kamu bisa tanya dokter online langsung dari website. Layanan
             kesehatan online terpercaya di Indonesia ini memiliki daftar dokter
@@ -40,7 +45,9 @@ function InformasiLainnya() {
         </div>
         <br />
         <div className="leading-7">
-          <h1 className="text-xl font-semibold">Mengapa Pilih <span className="text-blue-theme">SEHATIN</span></h1>
+          <h1 className="text-xl font-semibold">
+            Mengapa Pilih <span className="text-blue-theme">SEHATIN</span>
+          </h1>
           <p>
             SEHATIN adalah aplikasi yang menawarkan berbagai layanan konsultasi
             dengan dokter umum maupun spesialis. Keputusan untuk menyediakan
