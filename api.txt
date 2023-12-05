@@ -1,0 +1,7 @@
+Link MockAPI Daftar Minuman
+https://655d966c9f1e1093c59987e6.mockapi.io/daftar-minuman
+
+Link MockAPI Daftar Makanan (Per kategori)
+https://6527e682931d71583df19100.mockapi.io/kategori/1/daftar-makanan
+https://6527e682931d71583df19100.mockapi.io/kategori/2/daftar-makanan
+https://6527e682931d71583df19100.mockapi.io/kategori/3/daftar-makanan
