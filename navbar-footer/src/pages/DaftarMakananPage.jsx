@@ -34,6 +34,32 @@ function DaftarMakananPage() {
               <p className="p-[30px] leading-relaxed">{data[0].detail}</p>
             </div>
           </div>
+          <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center">
+            <img
+              src={data[1].image}
+              alt={data[1].name}
+              className="w-[400px] rounded-[50px]"
+            />
+            <div className="w-[500px] p-[30px] bg-green-bg-card-makanan rounded-[50px] drop-shadow-xl max-sm:w-auto">
+              <h1 className="pb-2.5 text-5xl font-semibold text-center text-green-theme border-b-2 border-b-green-theme">
+                {data[1].name}
+              </h1>
+              <p className="p-[30px] leading-relaxed">{data[1].detail}</p>
+            </div>
+          </div>
+          <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center">
+            <img
+              src={data[2].image}
+              alt={data[2].name}
+              className="w-[400px] rounded-[50px]"
+            />
+            <div className="w-[500px] p-[30px] bg-green-bg-card-makanan rounded-[50px] drop-shadow-xl max-sm:w-auto">
+              <h1 className="pb-2.5 text-5xl font-semibold text-center text-green-theme border-b-2 border-b-green-theme">
+                {data[2].name}
+              </h1>
+              <p className="p-[30px] leading-relaxed">{data[2].detail}</p>
+            </div>
+          </div>
         </section>
       )}
     </Layout>

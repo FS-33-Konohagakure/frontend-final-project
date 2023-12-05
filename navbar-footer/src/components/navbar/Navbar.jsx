@@ -3,8 +3,11 @@ import Logo from "../assets/logo.png";
 import StyleFont from "./Navbar.module.css";
 import Dropdown from "../dropdown/Dropdown";
 import { Link } from "react-router-dom";
+import { useLocalStorage } from "@uidotdev/usehooks";
 
 function Navbar() {
+  const [localUser, setLocalUser] = useLocalStorage("user", null);
+
   return (
     <header>
       <nav
@@ -25,14 +28,27 @@ function Navbar() {
           </ul>
         </div>
         <div className="text-base">
-          <ul className="flex gap-5 items-center">
-            <li className="text-blue-theme">
-              <Link to="/sign-in">Sign In</Link>
-            </li>
-            <li className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover">
-              <Link to="/sign-up">Sign Up</Link>
-            </li>
-          </ul>
+          {localUser ? (
+            <ul className="flex gap-5 items-center">
+              <li>
+                <button
+                  onClick={() => {}}
+                  className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover"
+                >
+                  Logout
+                </button>
+              </li>
+            </ul>
+          ) : (
+            <ul className="flex gap-5 items-center">
+              <li className="text-blue-theme">
+                <Link to="/sign-in">Sign In</Link>
+              </li>
+              <li className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover">
+                <Link to="/sign-up">Sign Up</Link>
+              </li>
+            </ul>
+          )}
         </div>
       </nav>
     </header>

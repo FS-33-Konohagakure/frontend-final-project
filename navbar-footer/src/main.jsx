@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  RouterProvider,
+  createBrowserRouter,
+  useNavigate,
+} from "react-router-dom";
+import Cookies from "js-cookie";
 import "./index.css";
 import HomePage from "./pages/HomePage";
 import Konsultasi from "./pages/Konsultasi";
@@ -15,6 +20,20 @@ import RegisterPage from "./pages/RegisterPage";
 import MakananPage from "./pages/MakananPage";
 import DaftarMakananPage from "./pages/DaftarMakananPage";
 import DaftarDokter from "./pages/konsultasi/DaftarDokter";
+import InformasiDokter from "./pages/konsultasi/InformasiDokter";
+
+const Middleware = ({ children }) => {
+  const navigate = useNavigate();
+
+  const getToken = Cookies.get("token");
+  useEffect(() => {
+    if (!getToken) {
+      navigate("/sign-in");
+    }
+  }, [getToken, navigate]);
+
+  return getToken ? children : null;
+};
 
 const router = createBrowserRouter([
   {
@@ -23,27 +42,51 @@ const router = createBrowserRouter([
   },
   {
     path: "/konsultasi",
-    element: <Konsultasi />,
+    element: (
+      <Middleware>
+        <Konsultasi />
+      </Middleware>
+    ),
   },
   {
     path: "/olahraga",
-    element: <Olahraga />,
+    element: (
+      <Middleware>
+        <Olahraga />
+      </Middleware>
+    ),
   },
   {
     path: "/makanan-page",
-    element: <MakananPage />,
+    element: (
+      <Middleware>
+        <MakananPage />
+      </Middleware>
+    ),
   },
   {
     path: "/minuman",
-    element: <Minuman />,
+    element: (
+      <Middleware>
+        <Minuman />
+      </Middleware>
+    ),
   },
   {
     path: "/pola-tidur",
-    element: <PolaTidur />,
+    element: (
+      <Middleware>
+        <PolaTidur />
+      </Middleware>
+    ),
   },
   {
     path: "/informasi-lainnya",
-    element: <InformasiLainnya />,
+    element: (
+      <Middleware>
+        <InformasiLainnya />
+      </Middleware>
+    ),
   },
   {
     path: "/sign-in",
@@ -55,19 +98,33 @@ const router = createBrowserRouter([
   },
   {
     path: "/makanan/:makananName",
-    element: <Makanan />,
+    element: (
+        <Makanan />
+    ),
   },
   {
     path: "/minuman/:minumanId",
-    element: <DetailMinuman />,
+    element: (
+      <Middleware>
+        <DetailMinuman />
+      </Middleware>
+    ),
   },
   {
     path: "/makanan-page/:kategoriId/daftar-makanan",
-    element: <DaftarMakananPage />,
+    element: (
+      <Middleware>
+        <DaftarMakananPage />
+      </Middleware>
+    ),
   },
   {
-    path: "/konsultasi/:kategoriId/dokter",
-    element: <DaftarDokter />,
+    path: "/konsultasi/:dokterId",
+    element: (
+      <Middleware>
+        <InformasiDokter />
+      </Middleware>
+    ),
   },
 ]);
 

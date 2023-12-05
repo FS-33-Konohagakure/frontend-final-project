@@ -16,6 +16,7 @@ export default {
         "green-bg-card-minuman": "#F8FFFA",
         "green-bg-card-makanan": "#F0FFF5",
         "green-bg-olahraga": "#4F9765",
+        "green-bg-button": "#2DD4BF",
         "gray-non-active": "#6C6C6C",
         "gray-bg-non-active": "#D8F6E1",
       },

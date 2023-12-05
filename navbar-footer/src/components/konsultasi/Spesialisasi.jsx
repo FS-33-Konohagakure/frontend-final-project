@@ -1,12 +1,43 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Style from "./Spesialisasi.module.css";
 import { Link } from "react-router-dom";
+import api from "../../api"
+import Cookies from "js-cookie"
 
 function Spesialisasi() {
+  const [dokter, setDokter] = useState([]);
+
+  useEffect(() => {
+    daftarDokter();
+  }, [])
+
+  const token = Cookies.get("token");
+
+  const daftarDokter = async () => {
+    const response = await api.get("/dokters", {
+      headers: {
+        Authorization: `Bearer ${token}`
+      }
+    })
+    console.log(response.data.data);
+    setDokter(response.data.data);
+  }
+
   return (
     <section className={`${Style.font} p-[50px] pb-0`}>
+      {dokter.map((item) => (
+        <div key={item.id}>
+          <Link to={""}>
+            <div>
+              <img src="" alt="" />
+              <p>{item.name}</p>
+            </div>
+          </Link>
+        </div>
+      ))}
+
       <div className="flex flex-wrap gap-[30px] justify-between items-center text-center font-medium">
-        <Link to="">
+        <Link to={`/konsultasi/1`}>
           <div className="flex flex-col items-center">
             <img
               src="assets/kandungan.png"

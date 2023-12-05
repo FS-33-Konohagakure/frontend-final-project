@@ -4,6 +4,7 @@ import FormRegister from "./components/FormRegister";
 import { Link } from "react-router-dom";
 
 function Register() {
+
   return (
     <main className={`${Style.font} bg-blue-theme text-white`}>
       <div className="flex">
