@@ -1,0 +1,22 @@
+Kategori
+[
+  {
+    "name": "Makanan yang Baik untuk Sarapan Setiap Pagi",
+    "detail": "Sarapan membawa berbagai macam manfaat untuk kesehatan. Meski begitu, jangan hanya sekadar kenyang. Pastikan sarapan yang Anda konsumsi mengandung berbagai macam nutrisi penting yang dibutuhkan tubuh.",
+    "image": "https://i.ibb.co/h2sSvCB/sarapan.png",
+    "id": "1"
+  },
+  {
+    "name": "Menu Makan Siang yang Sehat dan Lezat",
+    "detail": "Makan siang adalah salah satu waktu makan yang penting bagi kesehatan tubuh. Makan siang yang sehat dapat memberikan energi dan nutrisi yang dibutuhkan oleh tubuh untuk menjalankan aktivitas sepanjang hari.",
+    "image": "https://i.ibb.co/rkmp7V0/makan-siang.png",
+    "id": "2"
+  },
+  {
+    "name": "Makanan Terbaik dan Sehat untuk Dimakan di Malam Hari",
+    "detail": "Tidak ada jumlah asupan kalori yang tepat untuk makan malam. Semuanya tergantung pada berapa kalori yang telah Anda makan seharian. Jika pada pagi dan siang hari Anda sudah banyak makan, Anda mungkin perlu mengurangi porsi makan malam Anda untuk mempertahankan berat badan Anda tetap seperti sekarang.",
+    "image": "https://i.ibb.co/K7n25th/makan-malam.png",
+    "id": "3"
+  }
+]
+
