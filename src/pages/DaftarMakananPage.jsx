@@ -21,6 +21,7 @@ function DaftarMakananPage() {
         <div className={`${Style.font} text-center pt-[50px]`}>Loading...</div>
       ) : (
         <section className={`${Style.font} p-[50px] pb-0`}>
+          <div>
           <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center">
             <img
               src={data[0].image}
@@ -34,7 +35,7 @@ function DaftarMakananPage() {
               <p className="p-[30px] leading-relaxed">{data[0].detail}</p>
             </div>
           </div>
-          <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center">
+          <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center my-10">
             <img
               src={data[1].image}
               alt={data[1].name}
@@ -59,6 +60,7 @@ function DaftarMakananPage() {
               </h1>
               <p className="p-[30px] leading-relaxed">{data[2].detail}</p>
             </div>
+          </div>
           </div>
         </section>
       )}
