@@ -16,7 +16,7 @@ const Olahraga = () => {
 
   return (
     <Layout>
-      <section className={`${Style.font}`}>
+      <section className={`${Style.font} pb-[50px]`}>
         <div className="p-[50px] pt-[30px] pb-[30px]">
           <h1 className="text-2xl font-bold pb-1.5 border-b-2">
             TANTANGAN <span className="text-green-theme">OLAHRAGA</span>

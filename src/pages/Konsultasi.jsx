@@ -32,34 +32,40 @@ function Konsultasi() {
       {/* <Spesialisasi /> */}
 
       <section
-        className={`${Style.font} p-[50px] pb-0 flex flex-wrap justify-center gap-10`}
+        className={`${Style.font} p-[50px] pb-[50px] flex flex-wrap justify-center gap-10`}
       >
-        {dokter.map((item) => (
-          <div
-            key={item.id}
-            className="w-[550px] p-5 rounded-2xl bg-slate-100 drop-shadow-xl"
-          >
-            <div className="flex gap-5">
-              <img
-                src={item.image_normal}
-                alt={item.name}
-                className="w-[250px] rounded-xl"
-              />
-              <div className="leading-loose">
-                <p className="text-xl font-semibold">{item.name}</p>
-                <p className="text-lg">{item.spesialisasi}</p>
-                <p className="text-lg py-1.5 px-2.5 rounded-xl bg-green-bg-card-minuman inline-block">
-                  <FontAwesomeIcon icon={faSuitcase} size="sm" />{" "}
-                  {item.pengalaman} Tahun
-                </p>
-                <p>Rp. {item.biaya}</p>
-                <div className="bg-green-bg-button text-center text-white rounded-xl px-5 mt-2.5">
-                  <Link to={`/konsultasi/${item.id}`}>Lihat Selengkapnya</Link>
+        {dokter.length == 0 ? (
+          <div>Loading...</div>
+        ) : (
+          dokter.map((item) => (
+            <div
+              key={item.id}
+              className="w-[550px] p-5 rounded-2xl bg-slate-100 drop-shadow-xl"
+            >
+              <div className="flex gap-5">
+                <img
+                  src={item.image_normal}
+                  alt={item.name}
+                  className="w-[250px] rounded-xl"
+                />
+                <div className="leading-loose">
+                  <p className="text-xl font-semibold">{item.name}</p>
+                  <p className="text-lg">{item.spesialisasi}</p>
+                  <p className="text-lg py-1.5 px-2.5 rounded-xl bg-green-bg-card-minuman inline-block">
+                    <FontAwesomeIcon icon={faSuitcase} size="sm" />{" "}
+                    {item.pengalaman} Tahun
+                  </p>
+                  <p>Rp. {item.biaya}</p>
+                  <div className="bg-green-bg-button text-center text-white rounded-xl px-5 mt-2.5 hover:bg-green-bg-button-hover">
+                    <Link to={`/konsultasi/${item.name}`}>
+                      Lihat Selengkapnya
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))
+        )}
       </section>
     </Layout>
   );
