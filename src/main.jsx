@@ -21,6 +21,7 @@ import MakananPage from "./pages/MakananPage";
 import DaftarMakananPage from "./pages/DaftarMakananPage";
 import DaftarDokter from "./pages/konsultasi/DaftarDokter";
 import InformasiDokter from "./pages/konsultasi/InformasiDokter";
+import Pembayaran from "./pages/konsultasi/Pembayaran";
 
 const Middleware = ({ children }) => {
   const navigate = useNavigate();
@@ -119,10 +120,18 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/konsultasi/:dokterId",
+    path: "/konsultasi/:dokterName",
     element: (
       <Middleware>
         <InformasiDokter />
+      </Middleware>
+    ),
+  },
+  {
+    path: "/konsultasi/:dokterName/:dokterBiaya",
+    element: (
+      <Middleware>
+        <Pembayaran />
       </Middleware>
     ),
   },

@@ -20,7 +20,7 @@ function DaftarMakananPage() {
       {!data ? (
         <div className={`${Style.font} text-center pt-[50px]`}>Loading...</div>
       ) : (
-        <section className={`${Style.font} p-[50px] pb-0`}>
+        <section className={`${Style.font} p-[50px] pb-[50px]`}>
           <div>
           <div className="flex gap-[30px] justify-center max-lg:flex-col max-lg:items-center">
             <img

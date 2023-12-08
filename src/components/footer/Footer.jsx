@@ -11,7 +11,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="pt-[50px]">
+    <footer className="">
       <div className={`${StyleFont.font} bg-teal-50 pt-9`}>
         <div className="flex justify-between px-14 py-5 border border-x-0 max-[768px]:flex-col max-[768px]:items-center max-[768px]:py-0">
           <div className="max-[768px]:text-center">

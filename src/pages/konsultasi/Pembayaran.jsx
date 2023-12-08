@@ -1,9 +1,10 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 import Layout from "../../components/layout/Layout";
 import Style from "../Style.module.css";
+import ReactModal from "react-modal";
 
-function InformasiDokter() {
+function Pembayaran() {
   const doctorList = [
     {
       name: "Dr. I Made Kartika",
@@ -826,91 +827,148 @@ function InformasiDokter() {
     },
   ];
 
-  const { dokterName } = useParams();
+  const { dokterName, dokterBiaya } = useParams();
   const selectedDoctor = doctorList.find(
-    (doctor) => doctor.name === dokterName
+    (doctor) => doctor.biaya === dokterBiaya || doctor.name === dokterName
   );
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = (e) => {
+    e.preventDefault();
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = (e) => {
+    e.preventDefault();
+    setIsModalOpen(false);
+  };
+
+  const [datetime, setDatetime] = useState(null);
+
+  const getDateTime = () => {
+    const now = new Date();
+    const datetime = `${now.getDate()}-${
+      now.getMonth() + 1
+    }-${now.getFullYear()}, ${now.getHours()}:${now.getMinutes()}`;
+    setDatetime(datetime);
+  };
+
+  useEffect(() => {
+    getDateTime();
+  }, []);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    window.location.href = "/";
+  };
 
   return (
     <Layout>
       <section
-        className={`${Style.font} p-[50px] bg-green-bg-info-dokter flex justify-center items-center`}
+        className={`${Style.font} flex justify-center items-center p-[50px]`}
       >
-        <div className="w-[850px] p-5 bg-white rounded-2xl drop-shadow-xl">
-          <div className="flex gap-5">
-            <div className="text-center">
-              <img
-                src={selectedDoctor.image_normal}
-                alt={selectedDoctor.name}
-                className="w-[300px] h-[200px] rounded-xl"
+        <div className="bg-gray-bg-bayar w-[500px] p-10 rounded-xl shadow-xl">
+          <div className="flex justify-between pb-5">
+            <p className="text-lg font-semibold">Pembayaran Mu</p>
+            <p>Rp. {selectedDoctor.biaya}</p>
+          </div>
+          <p className="inline-block rounded-xl mb-5 py-2.5 px-5 bg-white">
+            Uang Elektronik
+          </p>
+          <form onSubmit={handleOpenModal}>
+            <div className="flex justify-between mb-5">
+              <label htmlFor="gopay">
+                <img src="/assets/gopay.png" alt="Gopay" className="w-20" />
+              </label>
+              <input
+                type="radio"
+                name="isModalOpen"
+                value="gopay"
+                id="gopay"
+                required
               />
-              <div className="pt-2.5 font-extralight">
-              <h1>Jadwal</h1>
-              <p>{selectedDoctor.jadwal_hari}, {selectedDoctor.jadwal_jam} WIB</p>
-              </div>
             </div>
-            <div className="flex gap-5">
-              <div>
-                <div>
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    NAMA
-                  </h1>
-                  <p>{selectedDoctor.name}</p>
-                </div>
-                <div className="py-2.5">
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    DOKTER
-                  </h1>
-                  <p>{selectedDoctor.spesialisasi}</p>
-                </div>
-                <div className="pb-2.5">
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    PENGALAMAN MEDIS
-                  </h1>
-                  <p>{selectedDoctor.pengalaman} Tahun</p>
-                </div>
-                <div>
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    NO STR
-                  </h1>
-                  <p>{selectedDoctor.str}</p>
-                </div>
-              </div>
-              <div>
-                <div>
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    BIAYA KONSULTASI
-                  </h1>
-                  <p>Rp. {selectedDoctor.biaya}/jam</p>
-                </div>
-                <div className="py-2.5">
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    BEKERJA
-                  </h1>
-                  <p>{selectedDoctor.hospital}</p>
-                </div>
-                <div>
-                  <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
-                    ALUMNUS
-                  </h1>
-                  <p>{selectedDoctor.alumnus}</p>
-                </div>
-              </div>
+            <div className="flex justify-between mb-5">
+              <label htmlFor="dana">
+                <img src="/assets/dana.png" alt="Dana" className="w-20" />
+              </label>
+              <input
+                type="radio"
+                name="isModalOpen"
+                value="dana"
+                id="dana"
+                required
+              />
             </div>
-          </div>
-          <p className="pt-5">{selectedDoctor.info}</p>
-          <div className="text-end mt-5">
-            <Link
-              to={`/konsultasi/${selectedDoctor.name}/${selectedDoctor.biaya}`}
-              className="bg-green-bg-button py-1.5 px-2.5 rounded-[10px] text-white hover:bg-green-bg-button-hover"
-            >
-              Pilih Dokter
-            </Link>
-          </div>
+            <div className="flex justify-between mb-5">
+              <label htmlFor="linkaja">
+                <img src="/assets/linkaja.png" alt="Linkaja" className="w-20" />
+              </label>
+              <input
+                type="radio"
+                name="isModalOpen"
+                value="linkaja"
+                id="linkaja"
+                required
+              />
+            </div>
+            <div className="flex justify-between mb-5">
+              <label htmlFor="ovo">
+                <img src="/assets/ovo.png" alt="Ovo" className="w-20" />
+              </label>
+              <input
+                type="radio"
+                name="isModalOpen"
+                value="ovo"
+                id="ovo"
+                required
+              />
+            </div>
+            <div className="mt-7 px-5 py-2 text-center bg-teal-400 rounded-xl hover:bg-teal-600">
+              <button type="submit" className="text-white font-medium">
+                Konfirmasi Pembayaran
+              </button>
+            </div>
+          </form>
         </div>
       </section>
+
+      <ReactModal isOpen={isModalOpen}>
+        <div
+          className={`${Style.font} relative h-full py-10 px-20 bg-slate-300`}
+        >
+          <div className="text-center">
+            <h1 className="text-4xl font-bold border-b-4 pb-2.5">SEHATIN</h1>
+          </div>
+          <p className="pt-10 text-lg">{datetime}</p>
+          <div className="pt-10 leading-loose text-xl border-b-4 pb-10">
+            <p className="border-b-2 inline-block">
+              Konsultasi dengan Dokter {selectedDoctor.name}
+            </p>{" "}
+            <br />
+            <p className="border-b-2 inline-block">
+              Dokter {selectedDoctor.spesialisasi}
+            </p>{" "}
+            <br />
+            <p className="border-b-2 inline-block">
+              Biaya konsultasi Rp. {selectedDoctor.biaya}
+            </p>{" "}
+            <br />
+            <p className="border-b-2 inline-block">Konsultasi selama 1 jam</p>
+          </div>
+          <div className="text-xl text-end pt-5">
+            <button
+              onClick={handleSubmit}
+              className="py-2.5 px-5 bg-blue-theme text-white font-medium rounded-xl hover:bg-blue-theme-hover"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </ReactModal>
     </Layout>
   );
 }
 
-export default InformasiDokter;
+export default Pembayaran;

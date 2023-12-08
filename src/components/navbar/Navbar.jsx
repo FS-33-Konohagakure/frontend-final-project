@@ -28,16 +28,16 @@ function Navbar() {
           </ul>
         </div>
         <div className="text-base">
-        <ul className="flex gap-5 items-center">
-              <li className="text-blue-theme">
-                <Link to="/sign-in">Sign In</Link>
-              </li>
-              <li className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover">
-                <Link to="/sign-up">Sign Up</Link>
-              </li>
-            </ul>
-          
-          {/* {localUser ? (
+          {/* <ul className="flex gap-5 items-center">
+            <li className="text-blue-theme">
+              <Link to="/sign-in">Sign In</Link>
+            </li>
+            <li className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover">
+              <Link to="/sign-up">Sign Up</Link>
+            </li>
+          </ul> */}
+
+          {localUser ? (
             <ul className="flex gap-5 items-center">
               <li>
                 <button
@@ -57,7 +57,7 @@ function Navbar() {
                 <Link to="/sign-up">Sign Up</Link>
               </li>
             </ul>
-          )} */}
+          )}
         </div>
       </nav>
     </header>
