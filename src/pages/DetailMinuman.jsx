@@ -20,7 +20,7 @@ function DetailMinuman() {
       {!data ? (
         <div className={`${Style.font} text-center p-[50px]`}>Loading...</div>
       ) : (
-        <section className={`${Style.font} p-[50px] pb-0`}>
+        <section className={`${Style.font} p-[50px] pb-[50px]`}>
           <h1 className="pb-1.5 text-4xl font-semibold border-b-2">
             {data.name}
           </h1>

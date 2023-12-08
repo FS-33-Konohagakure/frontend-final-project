@@ -17,7 +17,7 @@ const MakananPage = () => {
 
   return (
     <Layout>
-      <section className={`${Style.font} p-[50px] pb-0`}>
+      <section className={`${Style.font} p-[50px] pb-[50px]`}>
         <div className="flex flex-wrap justify-center gap-[20px]">
           {data.length == 0 ? (
             <div>Loading...</div>

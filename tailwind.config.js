@@ -17,8 +17,11 @@ export default {
         "green-bg-card-makanan": "#F0FFF5",
         "green-bg-olahraga": "#4F9765",
         "green-bg-button": "#2DD4BF",
+        "green-bg-button-hover": "#0d9488",
+        "green-bg-info-dokter": "#F0FDFA",
         "gray-non-active": "#6C6C6C",
         "gray-bg-non-active": "#D8F6E1",
+        "gray-bg-bayar": "#E2E8F0",
       },
       boxShadow: {
         md: "0 0 10px rgba(0, 0, 0, 0.1)",

@@ -35,7 +35,7 @@ function DaftarMakanan() {
   }
 
   return (
-    <section className="px-[50px]">
+    <section className="px-[50px] pb-[50px]">
       <div
         className={`${Style.font} bg-green-background py-[30px] rounded-[36px] shadow-xl`}
       >

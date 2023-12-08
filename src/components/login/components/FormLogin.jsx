@@ -46,6 +46,7 @@ const FormLogin = () => {
           placeholder="Enter your email"
           className="w-[300px] p-1.5 pl-2.5 rounded-md text-sm text-black"
           onChange={(e) => setEmail(e.target.value)}
+          required
         />
       </div>
       <div className="mt-2.5">
@@ -59,6 +60,7 @@ const FormLogin = () => {
           placeholder="Enter your password"
           className="w-[300px] p-1.5 pl-2.5 rounded-md text-sm text-black"
           onChange={(e) => setPassword(e.target.value)}
+          required
         />
       </div>
       <div className="mt-5 font-bold text-white">

@@ -16,7 +16,7 @@ const DaftarMinuman = () => {
   }, []);
 
   return (
-    <section className="px-[50px] pt-[50px]">
+    <section className="px-[50px] py-[50px]">
       <div
         className={`${Style.font} bg-green-background py-[30px] rounded-[36px] shadow-xl`}
       >
