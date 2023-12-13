@@ -180,7 +180,7 @@ function Makanan() {
 
   return (
     <Layout>
-      <section className={`${Style.font} p-[50px] pb-0`}>
+      <section className={`${Style.font} p-[50px] pb-[50px]`}>
         <div className="flex gap-[30px] p-[30px] rounded-2xl bg-green-background drop-shadow-xl max-lg:flex-col max-lg:items-center">
           <img
             src={selectedFood.imgSrc}

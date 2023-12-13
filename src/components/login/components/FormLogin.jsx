@@ -33,6 +33,42 @@ const FormLogin = () => {
     }
   };
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Kirim data login ke API
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email,
+        password,
+      }),
+    };
+
+    fetch(`http://localhost:3000/auth/login`, requestOptions)
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.status === 'success') {
+          // Simpan data user di local storage
+          localStorage.setItem('email', data.data.email);
+          localStorage.setItem('password', data.data.password);
+
+          // Set state isLoggedIn
+          setIsLoggedIn(true);
+        } else {
+          // Tampilkan error
+          alert(data.message);
+        }
+      })
+      .catch((error) => {
+        // Tampilkan error
+        alert(error.message);
+      });
+  };
+
   return (
     <form className={`${Style.font} max-h-screen`} onSubmit={loginHandler}>
       <div>

@@ -42,7 +42,7 @@ function Konsultasi() {
               key={item.id}
               className="w-[550px] p-5 rounded-2xl bg-slate-100 drop-shadow-xl"
             >
-              <div className="flex gap-5">
+              <div className="flex gap-5 max-sm:flex-col max-sm:items-center max-sm:text-center">
                 <img
                   src={item.image_normal}
                   alt={item.name}

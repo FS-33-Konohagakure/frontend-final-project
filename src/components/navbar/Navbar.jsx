@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../assets/logo.png";
 import StyleFont from "./Navbar.module.css";
 import Dropdown from "../dropdown/Dropdown";
@@ -7,6 +7,12 @@ import { useLocalStorage } from "@uidotdev/usehooks";
 
 function Navbar() {
   const [localUser, setLocalUser] = useLocalStorage("user", null);
+
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // Get data user dari local storage
+  const username = localStorage.getItem('username');
+  const password = localStorage.getItem('password');
 
   return (
     <header>
@@ -37,11 +43,12 @@ function Navbar() {
             </li>
           </ul> */}
 
-          {localUser ? (
+          {isLoggedIn ? (
             <ul className="flex gap-5 items-center">
               <li>
+                <h1>Selamat Datang {username}</h1>
                 <button
-                  onClick={() => {}}
+                  onClick={() => setIsLoggedIn(false)}
                   className="bg-blue-theme text-white p-2.5 rounded-xl hover:bg-blue-theme-hover"
                 >
                   Logout

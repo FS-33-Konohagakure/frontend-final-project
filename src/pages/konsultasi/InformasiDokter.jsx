@@ -837,7 +837,7 @@ function InformasiDokter() {
         className={`${Style.font} p-[50px] bg-green-bg-info-dokter flex justify-center items-center`}
       >
         <div className="w-[850px] p-5 bg-white rounded-2xl drop-shadow-xl">
-          <div className="flex gap-5">
+          <div className="flex gap-5 max-sm:flex-col max-sm:items-center max-sm:text-center">
             <div className="text-center">
               <img
                 src={selectedDoctor.image_normal}
@@ -849,7 +849,7 @@ function InformasiDokter() {
               <p>{selectedDoctor.jadwal_hari}, {selectedDoctor.jadwal_jam} WIB</p>
               </div>
             </div>
-            <div className="flex gap-5">
+            <div className="flex gap-5 max-[490px]:flex-col">
               <div>
                 <div>
                   <h1 className="text-lg font-semibold border-b-2 border-b-green-bg-button">
@@ -898,7 +898,7 @@ function InformasiDokter() {
               </div>
             </div>
           </div>
-          <p className="pt-5">{selectedDoctor.info}</p>
+          <p className="pt-5 text-justify">{selectedDoctor.info}</p>
           <div className="text-end mt-5">
             <Link
               to={`/konsultasi/${selectedDoctor.name}/${selectedDoctor.biaya}`}

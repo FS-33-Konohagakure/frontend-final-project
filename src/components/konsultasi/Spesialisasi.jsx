@@ -14,7 +14,7 @@ function Spesialisasi() {
   const token = Cookies.get("token");
 
   const daftarDokter = async () => {
-    const response = await api.get("/dokters", {
+    const response = await api.get("/dokters/kategori/:kategoriId", {
       headers: {
         Authorization: `Bearer ${token}`
       }
@@ -36,7 +36,7 @@ function Spesialisasi() {
         </div>
       ))}
 
-      <div className="flex flex-wrap gap-[30px] justify-between items-center text-center font-medium">
+      {/* <div className="flex flex-wrap gap-[30px] justify-between items-center text-center font-medium">
         <Link to={`/konsultasi/1`}>
           <div className="flex flex-col items-center">
             <img
@@ -184,7 +184,7 @@ function Spesialisasi() {
           />
           <p>Ahli Gizi</p>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
